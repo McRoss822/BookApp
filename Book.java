@@ -1,5 +1,5 @@
 
-package ua.lviv.iot.algo.part1.lab1;
+package ua.lviv.iot.algo.part1.lab1.BookApp;
 
 import lombok.*;
 
@@ -39,12 +39,10 @@ public class Book {
     private int countInWareHouse;
 
     public static void main(String[] args) {
-       Book[] listOfBooks;
-       listOfBooks=new Book[3];
-       listOfBooks[0]=new Book("Catcher in the Rye", "J.D.Sallinger","Little,Brown",
-               "Realistic Fiction",1951,23);
-       listOfBooks[1]=instance.getInstance();
-       listOfBooks[2]=new Book();
+       Book listOfBooks[]= {
+               new Book("Catcher in the Rye", "J.D.Sallinger","Little,Brown",
+               "Realistic Fiction",1951,23),new Book(), getInstance(), getInstance()};
+
 
         for (Book books:listOfBooks) {
             System.out.println(books);
